@@ -30,6 +30,7 @@ Use the shared schemes under `HiWidget.xcodeproj/xcshareddata/xcschemes/` for co
 - Use `overlayy(...)` instead of the newer `overlay(alignment:content:)` overloads when adding overlays with alignment or `ViewBuilder` content.
 - Use `maskk(...)` instead of the iOS 15 style `mask(alignment:_:)` / closure-based mask overloads when masking views.
 - Use `foregroundColorr(...)` instead of directly switching between `foregroundStyle(_:)` and `foregroundColor(_:)`; this wrapper already handles the compatibility split.
+- In SwiftUI, when using hex colors, prefer `Color(hex6: ...)` over `Color(UIColor(hex6: ...))`.
 - Before adding a new entry to `Localizable.strings`, first check whether that key already exists. If it exists, reuse the existing entry instead of adding a new one.
 - If duplicate translation entries are found, delete the newly added duplicate and keep the original existing entry.
 
